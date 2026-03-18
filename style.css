@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(139, 127, 116);
+    color: rgb(59, 25, 11);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+a{
+    color: rgb(59, 25, 11); 
+}
+
+.imagesection{
+    border-radius: 5px;
+    background-color: rgb(59, 25, 11);
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: fit-content;
+}
+
+.imagesection img{
+    transition: all 0.4s ease;
+}
+
+.imagesection:hover img:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.imagesection:hover img{
+    opacity: 0.4;
+}
+
+img{
+    border-radius: 5px;
+}
+
+header{
+    background: linear-gradient(to bottom,rgb(59, 25, 11) 0%,rgb(59, 25, 11) 40%, rgb(59, 25, 11) 70%, rgba(59, 25, 11, 0) 100%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 250px;
+}
+
+html{
+    overflow-y: scroll;
+}
