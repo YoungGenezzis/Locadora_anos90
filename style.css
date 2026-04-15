@@ -1,50 +1,46 @@
 body{
-    background-color: rgb(139, 127, 116);
-    color: rgb(59, 25, 11);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0;
+    background-color: rgb(183, 255, 199);
 }
-
-a{
-    color: rgb(59, 25, 11); 
+h1{
+    color:  rgb(10, 27, 12);
 }
-
-.imagesection{
-    border-radius: 5px;
-    background-color: rgb(59, 25, 11);
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    width: fit-content;
-}
-
-.imagesection img{
-    transition: all 0.4s ease;
-}
-
-.imagesection:hover img:hover{
-    opacity: 1;
-    transform: scale(1.05);
-}
-
-.imagesection:hover img{
-    opacity: 0.4;
-}
-
-img{
-    border-radius: 5px;
+p{
+    color: rgb(10, 27, 12);
 }
 
 header{
-    background: linear-gradient(to bottom,rgb(59, 25, 11) 0%,rgb(59, 25, 11) 40%, rgb(59, 25, 11) 70%, rgba(59, 25, 11, 0) 100%);
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo{
-    width: 250px;
+.arcoiris{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 32px;
+  font-family: monospace;
+  letter-spacing: 5px;
+  animation: colorRotate 6s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+  }
 }
 
 html{
